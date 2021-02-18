@@ -22,8 +22,9 @@ while True:
 
 # Webcam
 cap = cv2.VideoCapture(0)
-cap.set(3, 640)
-cap.set(4, 480)
+cap.set(3, 640) # Width
+cap.set(4, 480) # Height
+cap.set(10, 150) #Brightness
 while True:
     success, img = cap.read()
     cv2.imshow("Video", img)
